@@ -17,16 +17,10 @@ function App() {
           <Link to="/products">Products</Link>
         </nav>
         <Routes>
-          <Route path="/" component={Home} />
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/products/:id">
-            <ProductDetails />
-          </Route>
-          <Route path="/products">
-            <Products />
-          </Route>
+          <Route path="/" element={Home} />
+          <Route path="/about/*" element={<About />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </BrowserRouter>
     </div>

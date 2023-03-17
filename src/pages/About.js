@@ -27,6 +27,7 @@ export default function About() {
         Recusandae, ad!
       </p>
       {/* NOTE here is an example of a nested path. This path extends from the about page. if the user was to click on the link the url would extent to be /about/offers */}
+      {/* NOTE to use nested routes you must alter the path of the parent route in the App.js */}
       <Routes>
         <Route path="offers" element={<Offers />} />
       </Routes>
